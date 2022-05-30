@@ -22,7 +22,7 @@ def scan(port):
         pass
 port = 1 
 
-for x in range(1,120000): 
+for x in range(1,120000): # Ports to scan, port 120000 is the last one. More ports = more time 
 
     thread = threading.Thread(target=scan,kwargs={'port':port}) 
 
